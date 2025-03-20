@@ -6,6 +6,7 @@ dot.config({path: "/home/taller4O/productos/src/.env"})
 
 const app = express()
 const port = process.env.PORT
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Microservicio Productos Chambeando!')
